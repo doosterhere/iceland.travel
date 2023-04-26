@@ -26,8 +26,15 @@ function copyPlugins() {
         'node_modules/slick-carousel/slick/slick.css',
         'node_modules/slick-carousel/slick/slick-theme.css',
         'node_modules/magnific-popup/dist/magnific-popup.css',
-        'node_modules/hover.css/css/hover-min.css'])
+        'node_modules/hover.css/css/hover-min.css',
+        'node_modules/slick-carousel/slick/ajax-loader.gif'])
         .pipe(gulp.dest('./output'));
 }
 
-exports.build = gulp.series(createCss, copyPlugins);
+function copyFonts() {
+    return gulp.src(['node_modules/slick-carousel/slick/fonts/slick.ttf',
+        'node_modules/slick-carousel/slick/fonts/slick.woff'])
+        .pipe(gulp.dest('./output/fonts'));
+}
+
+exports.build = gulp.series(createCss, copyPlugins, copyFonts);
