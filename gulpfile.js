@@ -5,7 +5,7 @@ const less = require('gulp-less');
 const cssmin = require('gulp-cssmin');
 const rename = require('gulp-rename');
 
-exports.default = function () {
+function createCss() {
     return gulp.src('./src/less/style.less')
         .pipe(less().on('error', console.error.bind(console)))
         .pipe(cssmin())
@@ -17,10 +17,12 @@ exports.watch = function () {
     gulp.watch('./src/less/*.less', gulp.series('default'));
 }
 
-exports.build = function () {
+function copyPlugins() {
     return gulp.src(['node_modules/jquery/dist/jquery.min.js',
         'node_modules/wowjs/dist/wow.min.js',
         'node_modules/slick-carousel/slick/slick.min.js',
         'node_modules/magnific-popup/dist/jquery.magnific-popup.min.js'])
         .pipe(gulp.dest('./output'));
 }
+
+exports.build = gulp.series(createCss, copyPlugins);
