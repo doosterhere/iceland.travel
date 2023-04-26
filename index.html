@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iceland.travel</title>
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick-theme.css">
+    <link rel="stylesheet" href="node_modules/magnific-popup/dist/magnific-popup.css">
+    <link rel="stylesheet" href="node_modules/hover.css/css/hover-min.css">
+    <link rel="stylesheet" href="dist/style.min.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container header__container">
+        <div class="header__left-part">
+            <a href="#" class="logo">
+                <div class="logo-image"></div>
+                <span class="logo-text">Iceland.travel</span>
+            </a>
+        </div>
+        <div class="header__right-part">
+            <ul class="header__menu">
+                <li class="header__menu-item">
+                    <a href="#" class="header__menu-item-link">Об Исландии</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#" class="header__menu-item-link">Программа</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#" class="header__menu-item-link">Отзывы</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#" class="header__menu-item-link">Фотогалерея</a>
+                </li>
+                <li class="header__menu-cross">
+                    <div class="header__menu-cross-block"></div>
+                    <div class="header__menu-cross-block"></div>
+                </li>
+            </ul>
+            <div class="header__menu-mini">
+                <div class="header__menu-mini-block"></div>
+                <div class="header__menu-mini-block"></div>
+                <div class="header__menu-mini-block"></div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="about">
+    <div class="container about__container">
+        <div class="about__image">
+            <div class="about__path">
+                <div class="about__path-line">
+                    <svg class="svg-about-wide" width="302.5px" height="117.5px">
+                        <path fill-rule="evenodd" stroke="rgb(44, 44, 44)" stroke-width="1px" stroke-dasharray="7, 7"
+                              stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+                              d="M5.999,105.998 C5.999,105.998 32.988,37.245 70.999,34.998 C70.999,34.998 132.488,8.745 151.999,28.998 C151.999,28.998 164.999,36.745 170.999,57.998 C170.999,57.998 174.988,75.245 189.999,81.998 C189.999,81.998 259.988,125.745 241.999,38.998 C241.999,38.998 233.988,15.746 271.999,27.998 C271.999,27.998 294.488,30.745 297.999,4.998 "/>
+                        <path fill-rule="evenodd" fill="rgb(44, 44, 44)"
+                              d="M3.499,109.998 C5.432,109.998 6.999,111.565 6.999,113.498 C6.999,115.431 5.432,116.998 3.499,116.998 C1.566,116.998 0.0,115.431 0.0,113.498 C0.0,111.565 1.566,109.998 3.499,109.998 Z"/>
+                        <path fill-rule="evenodd" fill="rgb(44, 44, 44)"
+                              d="M85.499,25.998 C87.432,25.998 88.999,27.565 88.999,29.499 C88.999,31.431 87.432,32.998 85.499,32.998 C83.566,32.998 81.999,31.431 81.999,29.499 C81.999,27.565 83.566,25.998 85.499,25.998 Z"/>
+                        <path fill-rule="evenodd" fill="rgb(44, 44, 44)"
+                              d="M298.499,0.1 C300.432,0.1 301.999,1.565 301.999,3.498 C301.999,5.431 300.432,6.999 298.499,6.999 C296.566,6.999 294.999,5.431 294.999,3.498 C294.999,1.565 296.566,0.1 298.499,0.1 Z"/>
+                    </svg>
+                    <svg class="svg-about-narrow" width="227.5px" height="118.5px">
+                        <path fill-rule="evenodd" stroke="rgb(44, 44, 44)" stroke-width="1px" stroke-dasharray="7, 7"
+                              stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+                              d="M4.513,108.998 C4.513,108.998 24.813,40.244 53.405,37.998 C53.405,37.998 99.656,11.744 114.332,31.998 C114.332,31.998 124.110,39.744 128.623,60.998 C128.623,60.998 131.623,78.244 142.915,84.997 C142.915,84.997 195.559,128.745 182.28,41.998 C182.28,41.998 176.2,18.745 204.594,30.997 C204.594,30.997 221.509,33.745 224.151,7.997 "/>
+                        <path fill-rule="evenodd" fill="rgb(44, 44, 44)"
+                              d="M2.558,112.998 C3.970,112.998 5.116,114.117 5.116,115.497 C5.116,116.879 3.970,117.998 2.558,117.998 C1.145,117.998 0.0,116.879 0.0,115.497 C0.0,114.117 1.145,112.998 2.558,112.998 Z"/>
+                        <path fill-rule="evenodd" fill="rgb(44, 44, 44)"
+                              d="M65.370,28.998 C66.783,28.998 67.929,30.117 67.929,31.498 C67.929,32.878 66.783,33.998 65.370,33.998 C63.958,33.998 62.812,32.878 62.812,31.498 C62.812,30.117 63.958,28.998 65.370,28.998 Z"/>
+                        <path fill-rule="evenodd" fill="rgb(44, 44, 44)"
+                              d="M224.452,0.1 C225.865,0.1 227.10,1.117 227.10,2.498 C227.10,3.879 225.865,4.998 224.452,4.998 C223.39,4.998 221.894,3.879 221.894,2.498 C221.894,1.117 223.39,0.1 224.452,0.1 Z"/>
+                    </svg>
+                </div>
+                <div class="about__path-date about__path-flex">
+                    <div>Дата</div>
+                    <div id="pathDate">17-24 ноября 2022</div>
+                </div>
+                <div class="about__path-price about__path-flex">
+                    <div>Стоимость</div>
+                    <div id="pathPrice">1700 $</div>
+                </div>
+                <div class="about__path-seats-left about__path-flex">
+                    <div>Осталось мест</div>
+                    <div id="pathSeatsLeft">7 мест</div>
+                </div>
+            </div>
+        </div>
+        <h1 class="about__title">Путешес<span>твие в Исландию</span></h1>
+        <h3 class="about__text">Авторский тур <span>в страну льда</span></h3>
+        <div class="about__buttons">
+            <a href="#" class="btn about__btn-reserve hvr-underline-from-right" id="to-reservation">Забронировать
+                <div class="sprite-button"></div>
+            </a>
+            <div class="watch-video about__watch-video">
+                <a href="#" class="btn-play about__btn-play" id="watch-video-small">
+                    <div class="sprite-button"></div>
+                </a>
+                <h5 class="watch-video__text">Смотреть видео</h5>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="advantages" id="advantages">
+    <div class="container advantages__container">
+        <div class="advantages__top">
+            <h3 class="title advantages__top-title">Страна льда и огня</h3>
+            <div class="advantages__top-left">
+                <img class="wow animate__pulse" src="images/eruption.png" alt="Извержение">
+            </div>
+            <div class="advantages__top-right">
+                <h3 class="title advantages__top-title">Страна льда и огня</h3>
+                <p class="advantages__top-text">
+                    Исландия – это изолированный остров на краю Европы, поражающий невероятными контрастами: кипящие
+                    гейзеры и тысячелетние ледники, активные вулканы и ревущие водопады, скалистые фьорды и живописные
+                    национальные парки. Исландии есть чем удивить даже самого бывалого туриста.
+                </p>
+            </div>
+        </div>
+
+        <div class="advantages__middle">
+            <h3 class="title advantages__middle-title">Почему вы захотите поехать в тур именно с нами</h3>
+            <div class="advantages__middle-blocks">
+                <!--            block #1            -->
+                <div class="advantages__middle-blocks-block">
+                    <h5 class="advantages__middle-blocks-block-title">Крутая команда</h5>
+                    <p class="advantages__middle-blocks-block-text">
+                        В каждый тур едет сопровождающий и фотограф, а в каждом городе тебя ждёт локальный эксперт
+                        крутых мест
+                    </p>
+                </div>
+                <!--            block #2            -->
+                <div class="advantages__middle-blocks-block">
+                    <h5 class="advantages__middle-blocks-block-title">Свобода действий</h5>
+                    <p class="advantages__middle-blocks-block-text">
+                        Выбирай только те активности, которые нравятся и наслаждайся свободным временем в каждой точке
+                        маршрута
+                    </p>
+                </div>
+                <!--            block #3            -->
+                <div class="advantages__middle-blocks-block">
+                    <h5 class="advantages__middle-blocks-block-title">Транспорт</h5>
+                    <p class="advantages__middle-blocks-block-text">
+                        Мы арендуем 2-3 комфортных внедорожника на которых можно добраться до труднодоступных и
+                        невероятно красивых мест
+                    </p>
+                </div>
+                <!--            block #4            -->
+                <div class="advantages__middle-blocks-block">
+                    <h5 class="advantages__middle-blocks-block-title">Проживание</h5>
+                    <p class="advantages__middle-blocks-block-text">
+                        Вы будете располагаться в комфортном коттеджном комплексе на западе острова, включающим 12
+                        уютных дизайнерских домиков
+                    </p>
+                </div>
+                <!--            path            -->
+                <div class="advantages__middle-blocks-path">
+                    <svg class="svg-wide" width="2061.5px" height="571.5px">
+                        <path fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-dasharray="7, 7"
+                              stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+                              d="M1.500,4.498 C1.500,4.498 103.307,-24.940 131.499,101.499 C159.692,227.938 200.307,268.59 265.499,276.499 C330.692,284.938 355.307,233.59 347.499,195.499 C339.692,157.938 222.307,109.59 289.499,83.499 C356.692,57.938 523.668,107.935 612.499,100.499 C694.499,93.633 780.499,120.59 737.499,198.499 C694.499,276.938 536.307,458.59 723.499,526.499 C910.692,594.938 959.166,563.892 979.500,520.498 C997.558,481.960 1092.307,298.59 1169.499,389.499 C1246.692,480.939 919.500,415.59 949.499,252.499 C979.500,89.938 1247.307,36.59 1308.499,179.499 C1369.692,322.938 1166.307,403.59 1234.499,505.499 C1302.692,607.938 1655.307,591.59 1694.499,428.499 C1733.692,265.939 1619.307,59.59 1806.499,179.499 C1993.692,299.939 2036.307,98.59 2059.500,4.498 "/>
+                    </svg>
+                    <svg class="svg-medium" width="1485px" height="1203px">
+                        <path fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-dasharray="7, 7"
+                              stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+                              d="M0 4.65703C0 4.65703 179.539 -29.3844 229.257 116.822C278.976 263.029 350.602 310.025 465.569 319.181C580.539 328.94 623.948 269.553 610.179 225.517C596.411 182.084 389.399 126.167 507.894 96.0076C626.391 66.4505 912.844 125.421 1069.5 116.822C1408 98.2396 1414.17 489.162 1195.67 397C926.986 283.671 492.678 270 644 514.5C745.5 678.5 1151.38 536.867 1195.67 523.853C1545.98 420.987 1535.5 742.617 1386.13 840.689C1127.5 1010.5 630.218 1001.26 685.086 815.525C740.964 626.381 1106.17 650.765 1229.18 801.373C1571.24 1216.18 290.5 1453 0 780"/>
+                    </svg>
+                    <svg class="svg-narrow" width="899.5px" height="1003.5px">
+                        <path fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-dasharray="7, 7"
+                              stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+                              d="M1.500,4.498 C1.500,4.498 103.307,-24.941 131.499,101.498 C159.692,227.938 200.307,268.58 265.499,276.498 C330.692,284.938 355.307,233.58 347.499,195.498 C339.692,157.937 222.307,109.58 289.499,83.498 C356.692,57.937 523.668,107.935 612.499,100.498 C694.499,93.633 792.872,134.329 733.582,221.322 C621.440,385.861 230.946,163.751 388.327,465.435 C434.315,553.590 654.385,464.753 679.499,453.499 C878.14,364.540 996.210,481.436 787.499,727.499 C722.761,803.822 358.862,866.358 389.975,705.737 C421.660,542.165 628.75,563.252 698.499,693.498 C892.462,1052.225 321.274,1089.915 328.500,845.499 "/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="advantages__bottom">
+            <h3 class="title advantages__bottom-title">Уникальные места Исландии</h3>
+            <div class="advantages__bottom-content">
+                <div class="advantages__bottom-left">
+                    <div class="advantages__iceland">
+                        <div class="advantages__iceland-path">
+                            <svg class="svg-wide" width="111.5px" height="184.5px">
+                                <path fill-rule="evenodd" stroke="rgb(0, 0, 0)" stroke-width="1px"
+                                      stroke-dasharray="7, 7"
+                                      stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+                                      d="M1.499,1.499 C1.499,1.499 20.604,41.537 52.499,38.499 C83.928,35.505 77.90,12.9 66.432,17.632 C26.891,38.493 57.348,74.928 62.499,80.499 C67.651,86.70 88.15,102.595 66.499,113.498 C44.984,124.403 20.15,99.594 16.499,123.499 C12.984,147.403 42.348,140.595 46.499,174.499 C50.651,208.403 117.582,133.341 94.595,139.90 C63.300,146.918 81.564,174.91 110.499,178.499 "/>
+                            </svg>
+                            <svg class="svg-narrow" width="67.5px" height="111.5px">
+                                <path fill-rule="evenodd" stroke="rgb(0, 0, 0)" stroke-width="1px"
+                                      stroke-dasharray="7, 7" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+                                      d="M1.158,1.103 C1.158,1.103 12.559,24.997 31.593,23.183 C50.349,21.397 46.268,7.375 39.908,10.731 C16.311,23.180 34.487,44.922 37.561,48.248 C40.635,51.572 52.788,61.434 39.948,67.940 C27.108,74.448 12.208,59.643 10.110,73.909 C8.12,88.174 25.535,84.111 28.13,104.343 C30.490,124.577 70.432,79.782 56.715,83.213 C38.38,87.884 48.938,104.100 66.206,106.730 "/>
+                            </svg>
+                        </div>
+                        <div class="advantages__iceland-path-point advantages__iceland-path-point_selected hvr-glow">1</div>
+                        <div class="advantages__iceland-path-point hvr-glow">2</div>
+                        <div class="advantages__iceland-path-point hvr-glow">3</div>
+                        <div class="advantages__iceland-path-point hvr-glow">4</div>
+                        <div class="advantages__iceland-path-point hvr-glow">5</div>
+                        <h5 class="advantages__iceland-title">Исландия</h5>
+                        <img class="img-wide" src="images/iceland.png" alt="Исландия">
+                        <img class="img-narrow" src="images/iceland-mini.png" alt="Исландия">
+                    </div>
+                </div>
+                <div class="advantages__bottom-right">
+                    <h5 class="advantages__bottom-right-title">Заповедник Хорнстрандир</h5>
+                    <p class="advantages__bottom-right-text">
+                        Высота береговых скал 534 метра над уровнем моря, что создает идеальные условия для едва ли не
+                        самой большой колонии морских птиц на земле.
+                    </p>
+                    <div class="advantages__bottom-right-image">
+                        <img class="wow animate__bounceInUp" src="images/poi/poi-hornstrandir.png" alt="Термальный источник">
+                        <div class="advantages__big-white"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="last-tour-video" id="last-video-tour">
+    <div class="container last-tour-video__container">
+        <div class="watch-video last-tour-video__watch-video">
+            <a href="#" class="btn-play last-tour-video__btn-play" id="watch-video-big">
+                <div class="sprite-button"></div>
+            </a>
+            <h5 class="watch-video__text">Посмотрите видео путешествия 2019 года</h5>
+            <div class="last-tour-video__youtube">
+                <iframe class="yt-player-iframe" src="https://www.youtube.com/embed/sR8x-DcyxIQ" title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"></iframe>
+                <span class="last-tour-video__cross">×</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="tour-program" id="tour-program">
+    <div class="container tour-program__container">
+        <h3 class="title tour-program__title">Программа тура</h3>
+        <div class="tour-program__content">
+            <div class="slick-carousel slick-carousel-tour">
+                <!-- слайд #1 -->
+                <div class="slick-carousel__item">
+                    <div class="slick-carousel__item-image slick-carousel-tour__item-image">
+                        <img class="wow animate__fadeInUp" src="images/program/program-slide-01.jpg" alt="Рейкьявик">
+                    </div>
+                    <div class="slick-carousel__item-text slick-carousel-tour__item-text">
+                        <h4 class="tour-program__day-of-tour">День 1 <span>/ 7</span></h4>
+                        <h5 class="tour-program__slide-title">Проведём экскурсию по Рейкьявику</h5>
+                        <p class="tour-program__slide-text">
+                            Рейкьявик расположен на мысе, выходящем в открытое море. На одном конце города возвышается
+                            шпиль главного собора Хатльгримскиркья, на другом – необычное строение - городская котельная
+                            Перлан, состоящая из круглых резервуаров с горячей водой, выполненная в форме цветка и
+                            подогреваемая термальными источниками.
+                        </p>
+                    </div>
+                </div>
+                <!-- слайд #2 -->
+                <div class="slick-carousel__item">
+                    <div class="slick-carousel__item-image slick-carousel-tour__item-image">
+                        <img src="images/program/program-slide-02.jpg" alt="Парк Тингведлир">
+                    </div>
+                    <div class="slick-carousel__item-text slick-carousel-tour__item-text">
+                        <h4 class="tour-program__day-of-tour">День 2 <span>/ 7</span></h4>
+                        <h5 class="tour-program__slide-title">Посетим парк Тингведлир</h5>
+                        <p class="tour-program__slide-text">
+                            Парк Тингведлир - национальная святыня Исландии, получившая свое название после событий 930
+                            года – место образования исландского парламента (Альтинг), одного из старейшего в мире. Парк
+                            является одним из редких мест во всем мире, где можно воочию увидеть движение литосферных
+                            плит.
+                        </p>
+                    </div>
+                </div>
+                <!-- слайд #3 -->
+                <div class="slick-carousel__item">
+                    <div class="slick-carousel__item-image slick-carousel-tour__item-image">
+                        <img src="images/program/program-slide-03.jpg" alt="Овечки">
+                    </div>
+                    <div class="slick-carousel__item-text slick-carousel-tour__item-text">
+                        <h4 class="tour-program__day-of-tour">День 3 <span>/ 7</span></h4>
+                        <h5 class="tour-program__slide-title">Познакомимся с исландскими овечками</h5>
+                        <p class="tour-program__slide-text">
+                            Мы отправимся в путешествие по одному из самых необычных туристических маршрутов Исландии —
+                            Золотому кольцу. Овeчки будут вaшими пocтoянными cпутникaми. Ha пoляx и в кeмпингax, в
+                            гopныx дoлинax и пpямo пocpeди тpacc — кудa бы вы ни пoexaли, вaм будут вcтpeчaтьcя бpoдящиe
+                            caми пo ceбe oвeчки c бapaшкaми.
+                        </p>
+                    </div>
+                </div>
+                <!-- слайд #4 -->
+                <div class="slick-carousel__item">
+                    <div class="slick-carousel__item-image slick-carousel-tour__item-image">
+                        <img src="images/program/program-slide-04.jpg" alt="Долина гейзеров Хаукадалур">
+                    </div>
+                    <div class="slick-carousel__item-text slick-carousel-tour__item-text">
+                        <h4 class="tour-program__day-of-tour">День 4 <span>/ 7</span></h4>
+                        <h5 class="tour-program__slide-title">Ощутим мощь Земли</h5>
+                        <p class="tour-program__slide-text">
+                            В долине гейзеров Хаукадалур находится самый известный горячий источник Исландии - Гейсир,
+                            давший название всем источникам, способным фонтанировать. Не действующий в настоящее время и
+                            представленный в виде зеленого озера. Cоседний гейзер Строккур выбрасывает каждые 5-10 минут
+                            подземные воды на 30 метров в высоту!
+                        </p>
+                    </div>
+                </div>
+                <!-- слайд #5 -->
+                <div class="slick-carousel__item">
+                    <div class="slick-carousel__item-image slick-carousel-tour__item-image">
+                        <img src="images/program/program-slide-05.jpg" alt="Южный берег Исландии">
+                    </div>
+                    <div class="slick-carousel__item-text slick-carousel-tour__item-text">
+                        <h4 class="tour-program__day-of-tour">День 5 <span>/ 7</span></h4>
+                        <h5 class="tour-program__slide-title">Увидим южный берег Исландии</h5>
+                        <p class="tour-program__slide-text">
+                            Мы окажемся среди ошеломляющего пейзажа в виде высоких гор, активных вулканов, огромных
+                            ледников, бурных рек, водопадов и изумительного пляжа с чёрным вулканическим песком. В
+                            ледниковый период территория южного берега была полностью скрыта под океаном и ледниками.
+                        </p>
+                    </div>
+                </div>
+                <!-- слайд #6 -->
+                <div class="slick-carousel__item">
+                    <div class="slick-carousel__item-image slick-carousel-tour__item-image">
+                        <img src="images/program/program-slide-06.jpg" alt="Ледник Снайфедльсйёкюдль">
+                    </div>
+                    <div class="slick-carousel__item-text slick-carousel-tour__item-text">
+                        <h4 class="tour-program__day-of-tour">День 6 <span>/ 7</span></h4>
+                        <h5 class="tour-program__slide-title">Полюбуемся на западное побережье</h5>
+                        <p class="tour-program__slide-text">
+                            На этой части острова как будто собрано всего понемногу из разных частей страны.
+                            Путешествуя по полуострову, Вы посетите множество природных достопримечательностей:
+                            вулканические поля, псевдократеры, вулканические кратеры, пещеры в скалах. И, конечно же,
+                            увидите вершину ледника Снайфедльсйёкюдль.
+                        </p>
+                    </div>
+                </div>
+                <!-- слайд #7 -->
+                <div class="slick-carousel__item">
+                    <div class="slick-carousel__item-image slick-carousel-tour__item-image">
+                        <img src="images/program/program-slide-07.jpg" alt="Голубая лагуна">
+                    </div>
+                    <div class="slick-carousel__item-text slick-carousel-tour__item-text">
+                        <h4 class="tour-program__day-of-tour">День 7 <span>/ 7</span></h4>
+                        <h5 class="tour-program__slide-title">Отдохнём в уникальном спа-центре</h5>
+                        <p class="tour-program__slide-text">
+                            Геотермальная вода Голубой лагуны имеет уникальный состав, состоящий из трех компонентов:
+                            минералов, диоксида кремния и водорослей. Диоксид кремния выпадает в белый осадок и образует
+                            на дне слой лечебной глины. Вода в чаше Лагуны циркулирует непрерывно и полностью
+                            обновляется за каждые 90 часов.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="tour-program__big-white"></div>
+            <a href="#" class="tour-program__download">
+                <div class="tour-program__download-icon"></div>
+                <span>Скачать программу тура</span>
+            </a>
+            <div class="carousel-button carousel-button-tour_left">
+                <div class="carousel-button-background-block"></div>
+            </div>
+            <div class="carousel-button carousel-button-tour_right">
+                <div class="carousel-button-background-block"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="feedbacks" id="feedbacks">
+    <div class="container feedbacks__container">
+        <div class="title feedbacks__title">Отзывы</div>
+        <div class="feedbacks__content">
+            <div class="slick-carousel slick-carousel-feedbacks">
+                <!-- слайд #1 -->
+                <div class="slick-carousel__item">
+                    <div class="slick-carousel__item-text slick-carousel-feedbacks__item-text">
+                        <h4 class="feedbacks__name">Иван</h4>
+                        <h5 class="feedbacks__score">10/10</h5>
+                        <p class="feedbacks__slide-text">
+                            Хочу сказать организаторам тура огромное спасибо за это шикарное путешествие! Мы с девушкой
+                            давно мечтали побывать в Исландии и благодаря ребятам из iceland.travel эта страна оставила
+                            невероятные впечатления далёкого, но теперь изведанного края, которые мы запомним надолго!
+                        </p>
+                    </div>
+                    <div class="slick-carousel__item-image slick-carousel-feedbacks__item-image">
+                        <img class="wow animate__bounceInRight" src="images/feedbacks/feedbacks-slide-01.jpg" alt="Фото счастливых людей">
+                    </div>
+                </div>
+                <!-- слайд #2 -->
+                <div class="slick-carousel__item">
+                    <div class="slick-carousel__item-text slick-carousel-feedbacks__item-text">
+                        <h4 class="feedbacks__name">Вероника</h4>
+                        <h5 class="feedbacks__score">10/10</h5>
+                        <p class="feedbacks__slide-text">
+                            Исландия - страна удивительная. Не так уж много на нашей земле мест, в которых такое
+                            количество природных чудес сосредоточено на такой маленькой (еще и островной) территории.
+                            Пейзажи в Исландии фантастические, а наше путешествие стало незабываемым.
+                        </p>
+                    </div>
+                    <div class="slick-carousel__item-image slick-carousel-feedbacks__item-image">
+                        <img src="images/feedbacks/feedbacks-slide-02.jpg" alt="Фото счастливых людей">
+                    </div>
+                </div>
+                <!-- слайд #3 -->
+                <div class="slick-carousel__item">
+                    <div class="slick-carousel__item-text slick-carousel-feedbacks__item-text">
+                        <h4 class="feedbacks__name">Эльза</h4>
+                        <h5 class="feedbacks__score">10/10</h5>
+                        <p class="feedbacks__slide-text">
+                            Исландия - это была моя давняя мечта. Ещё бы, ведь именно исландский вулкан, название
+                            которого
+                            невозможно произнести, посадил все самолёты мира в 2009 году, а в прошлом году исландская
+                            сборная по футболу заявила о себе на весь мир, обыграв Англию на чемпионате по футболу.
+                        </p>
+                    </div>
+                    <div class="slick-carousel__item-image slick-carousel-feedbacks__item-image">
+                        <img src="images/feedbacks/feedbacks-slide-03.jpg" alt="Фото счастливых людей">
+                    </div>
+                </div>
+                <!-- слайд #4 -->
+                <div class="slick-carousel__item">
+                    <div class="slick-carousel__item-text slick-carousel-feedbacks__item-text">
+                        <h4 class="feedbacks__name">Александр</h4>
+                        <h5 class="feedbacks__score">2/10</h5>
+                        <p class="feedbacks__slide-text">
+                            Неделя в Исландии летом - отличное средство для любителей поворчать о дурном климате нашей
+                            средней полосы. Холодно. Дождь постоянно. Ветер холодный, сырой и сильный. Цены на все
+                            взбесившиеся. Смотреть нечего. Море ледяное. Самое приятное было - уезжать оттуда домой.
+                        </p>
+                    </div>
+                    <div class="slick-carousel__item-image slick-carousel-feedbacks__item-image">
+                        <img src="images/feedbacks/feedbacks-slide-04.jpg" alt="Фото счастливых людей">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-button carousel-button-feedbacks_left disabled">
+                <div class="carousel-button-background-block"></div>
+            </div>
+            <div class="carousel-button carousel-button-feedbacks_right">
+                <div class="carousel-button-background-block"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="gallery" id="gallery">
+    <div class="container gallery__container">
+        <h3 class="title gallery__title">Фотогалерея</h3>
+        <div class="gallery__content">
+            <div class="slick-carousel slick-carousel-gallery wow animate__flipInX">
+                <!-- слайд #1 -->
+                <div class="slick-carousel__item">
+                    <div class="slick-carousel-gallery__item-left-block">
+                        <a href="images/gallery/gallery-1-1.jpg">
+                            <img src="images/gallery/gallery-1-1.jpg" alt="Природа Исландии">
+                        </a>
+                    </div>
+                    <div class="slick-carousel-gallery__item-central-block">
+                        <div class="slick-carousel-gallery__item-central-block-top">
+                            <a href="images/gallery/gallery-1-2.jpg">
+                                <img src="images/gallery/gallery-1-2.jpg" alt="Природа Исландии">
+                            </a>
+                            <a href="images/gallery/gallery-1-3.jpg">
+                                <img src="images/gallery/gallery-1-3.jpg" alt="Природа Исландии">
+                            </a>
+                        </div>
+                        <div class="slick-carousel-gallery__item-central-block-bottom">
+                            <a href="images/gallery/gallery-1-4.jpg">
+                                <img src="images/gallery/gallery-1-4.jpg" alt="Природа Исландии">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick-carousel-gallery__item-right-block">
+                        <a href="images/gallery/gallery-1-5.jpg">
+                            <img src="images/gallery/gallery-1-5.jpg" alt="Природа Исландии">
+                        </a>
+                    </div>
+                </div>
+                <!-- слайд #2 -->
+                <div class="slick-carousel__item">
+                    <div class="slick-carousel-gallery__item-left-block">
+                        <a href="images/gallery/gallery-2-1.jpg">
+                            <img src="images/gallery/gallery-2-1.jpg" alt="Природа Исландии">
+                        </a>
+                    </div>
+                    <div class="slick-carousel-gallery__item-central-block">
+                        <div class="slick-carousel-gallery__item-central-block-top">
+                            <a href="images/gallery/gallery-2-2.jpg">
+                                <img src="images/gallery/gallery-2-2.jpg" alt="Природа Исландии">
+                            </a>
+                            <a href="images/gallery/gallery-2-3.jpg">
+                                <img src="images/gallery/gallery-2-3.jpg" alt="Природа Исландии">
+                            </a>
+                        </div>
+                        <div class="slick-carousel-gallery__item-central-block-bottom">
+                            <a href="images/gallery/gallery-2-4.jpg">
+                                <img src="images/gallery/gallery-2-4.jpg" alt="Природа Исландии">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick-carousel-gallery__item-right-block">
+                        <a href="images/gallery/gallery-2-5.jpg">
+                            <img src="images/gallery/gallery-2-5.jpg" alt="Природа Исландии">
+                        </a>
+                    </div>
+                </div>
+                <!-- слайд #3 -->
+                <div class="slick-carousel__item">
+                    <div class="slick-carousel-gallery__item-left-block">
+                        <a href="images/gallery/gallery-3-1.jpg">
+                            <img src="images/gallery/gallery-3-1.jpg" alt="Природа Исландии">
+                        </a>
+                    </div>
+                    <div class="slick-carousel-gallery__item-central-block">
+                        <div class="slick-carousel-gallery__item-central-block-top">
+                            <a href="images/gallery/gallery-3-2.jpg">
+                                <img src="images/gallery/gallery-3-2.jpg" alt="Природа Исландии">
+                            </a>
+                            <a href="images/gallery/gallery-3-3.jpg">
+                                <img src="images/gallery/gallery-3-3.jpg" alt="Природа Исландии">
+                            </a>
+                        </div>
+                        <div class="slick-carousel-gallery__item-central-block-bottom">
+                            <a href="images/gallery/gallery-3-4.jpg">
+                                <img src="images/gallery/gallery-3-4.jpg" alt="Природа Исландии">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick-carousel-gallery__item-right-block">
+                        <a href="images/gallery/gallery-3-5.jpg">
+                            <img src="images/gallery/gallery-3-5.jpg" alt="Природа Исландии">
+                        </a>
+                    </div>
+                </div>
+                <!-- слайд #4 -->
+                <div class="slick-carousel__item">
+                    <div class="slick-carousel-gallery__item-left-block">
+                        <a href="images/gallery/gallery-4-1.jpg">
+                            <img src="images/gallery/gallery-4-1.jpg" alt="Природа Исландии">
+                        </a>
+                    </div>
+                    <div class="slick-carousel-gallery__item-central-block">
+                        <div class="slick-carousel-gallery__item-central-block-top">
+                            <a href="images/gallery/gallery-4-2.jpg">
+                                <img src="images/gallery/gallery-4-2.jpg" alt="Природа Исландии">
+                            </a>
+                            <a href="images/gallery/gallery-4-3.jpg">
+                                <img src="images/gallery/gallery-4-3.jpg" alt="Природа Исландии">
+                            </a>
+                        </div>
+                        <div class="slick-carousel-gallery__item-central-block-bottom">
+                            <a href="images/gallery/gallery-4-4.jpg">
+                                <img src="images/gallery/gallery-4-4.jpg" alt="Природа Исландии">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick-carousel-gallery__item-right-block">
+                        <a href="images/gallery/gallery-4-5.jpg">
+                            <img src="images/gallery/gallery-4-5.jpg" alt="Природа Исландии">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="slick-carousel slick-carousel-gallery-mini wow animate__flipInX"></div>
+            <div class="gallery-button gallery-button__left">
+                <div class="gallery-button__background-block"></div>
+            </div>
+            <div class="gallery-button gallery-button__right">
+                <div class="gallery-button__background-block"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="reservation" id="reservation">
+    <div class="container reservation__container">
+        <h3 class="title reservation__tile">Забронировать путешествие</h3>
+        <div class="reservation__form">
+            <div class="reservation__form-app">
+                <h6 class="reservation__form-people_quantity-title">Количество человек</h6>
+                <div class="reservation__quantity">
+                    <div class="reservation__btn">1</div>
+                    <div class="reservation__btn">2</div>
+                    <div class="reservation__btn">3</div>
+                    <div class="reservation__btn">4</div>
+                    <div class="reservation__btn">5</div>
+                    <div class="reservation__btn">6</div>
+                    <div class="reservation__btn">7+</div>
+                </div>
+                <div class="reservation__warning-text invisible">Укажите кол-во участников</div>
+                <input class="reservation__input" type="text" id="input-name" placeholder="Ваше имя">
+                <div class="reservation__warning-text invisible">Укажите ваше имя</div>
+                <input class="reservation__input" type="text" id="input-phone" placeholder="Ваш телефон">
+                <div class="reservation__warning-text invisible">Укажите ваш номер телефона</div>
+                <a href="#" class="reservation__btn-submit hvr-underline-from-right">Отправить заявку</a>
+            </div>
+            <div class="reservation__modal-window">
+                <h3 class="title">Спасибо</h3>
+                <div class="reservation__modal-window-btn">×</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="footer">
+    <div class="container footer__container">
+        <div class="footer__left-part">
+            <a href="#" class="logo">
+                <div class="logo-image"></div>
+                <span class="logo-text">Iceland.travel</span>
+            </a>
+        </div>
+        <div class="footer__central-part">
+            <div class="footer__central-part-social"></div>
+            <div class="footer__central-part-social"></div>
+            <div class="footer__central-part-social"></div>
+        </div>
+        <div class="footer__right-part">
+            <div class="footer__right-part_text">+375 29 47-09-788</div>
+        </div>
+    </div>
+</section>
+
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/wowjs/dist/wow.min.js"></script>
+<script src="scripts/jquery.inputMask.js"></script>
+<script src="node_modules/slick-carousel/slick/slick.min.js"></script>
+<script src="node_modules/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+<script src="scripts/script.js"></script>
+</body>
+</html>

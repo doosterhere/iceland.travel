@@ -1,0 +1,1206 @@
+@import 'statements';
+@import 'mixins';
+
+@font-face {
+  font-family: "Montserrat Medium";
+  src: url("../fonts/montserrat-medium.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat Regular";
+  src: url("../fonts/montserrat-regular.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat SemiBold";
+  src: url("../fonts/montserrat-semiBold.ttf");
+}
+
+@font-face {
+  font-family: "Muller Regular";
+  src: url("../fonts/muller-regular.otf");
+}
+
+@font-face {
+  font-family: "Acquest Script";
+  src: url("../fonts/acquestScript.ttf");
+}
+
+@font-face {
+  font-family: "Corinthia";
+  src: url("../fonts/corinthia.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat Regular", sans-serif;
+  color: @colorBlack;
+  position: relative;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: unset;
+  }
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 35px 0 25px 0;
+  background-color: @colorWhite;
+
+  .header__container {
+    .flex(unset, space-between, unset, unset);
+
+    .header__left-part {
+      .flex(unset, unset, center, unset);
+    }
+
+    .header__right-part {
+      .flex(unset, unset, center, unset);
+
+      .header__menu {
+        .flex(row, flex-end, unset, 51px);
+        list-style: none;
+
+        .header__menu-item {
+
+          .header__menu-item-link {
+            text-decoration: none;
+            font-size: 15px;
+            color: @colorBlack;
+            text-align: left;
+          }
+        }
+
+        .header__menu-cross {
+          cursor: pointer;
+          display: none;
+          position: absolute;
+          right: 19px;
+          top: 45px;
+
+          .header__menu-cross-block {
+            width: 31px;
+            height: 3px;
+            background-color: @colorBlue;
+            transform: rotate(45deg);
+
+            &:last-child {
+              transform: rotate(-45deg) translate(2px, -2px);
+            }
+          }
+        }
+      }
+
+      .header__menu-mini {
+        cursor: pointer;
+        margin-top: -5px;
+        display: none;
+        width: 30px;
+        height: 21px;
+
+        .header__menu-mini-block {
+          border: 1px solid @colorBlack;
+        }
+      }
+    }
+  }
+}
+
+.logo {
+  .flex(unset, unset, center, 11px);
+  text-decoration: none;
+
+  .logo-image {
+    width: 30px;
+    height: 30px;
+    background: url("../images/logo.png") center;
+    background-size: contain;
+  }
+
+  .logo-text {
+    font-size: 15px;
+    color: @colorBlack;
+    text-align: left;
+  }
+}
+
+.btn {
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  font-family: "Montserrat Medium", sans-serif;
+}
+
+.sprite-button {
+  background-image: url('../images/sprite-button.png');
+}
+
+.watch-video {
+  .flex(unset, unset, center, 12px);
+
+  .btn-play {
+    position: relative;
+    .flex(unset, center, center, unset);
+    border-radius: 50%;
+    border: 1px solid @colorWhite;
+  }
+
+  .watch-video__text {
+    font-size: 18px;
+    color: @colorWhite;
+    line-height: 1.056;
+    max-width: 218px;
+  }
+}
+
+.title {
+  font-size: 35px;
+  font-family: "Montserrat SemiBold", sans-serif;
+  color: @colorWhite;
+}
+
+.about {
+  overflow: hidden;
+
+  .about__container {
+    position: relative;
+    padding: 120px 0 348px;
+    .flex(column, unset, unset, unset);
+
+    .about__image {
+      position: absolute;
+      width: 1004px;
+      height: 620px;
+      background: url("../images/iceberg.png") center;
+      background-size: contain;
+      top: 0;
+      left: 279px;
+      z-index: -1;
+
+      .about__path {
+        position: absolute;
+        top: 298px;
+        left: 431px;
+        font-size: 14px;
+        font-family: "Montserrat Medium", sans-serif;
+
+        .about__path-line {
+          .svg-about-narrow {
+            display: none;
+          }
+        }
+
+        .about__path-flex {
+          .flex(column, flex-end, unset, 4px);
+          text-align: left;
+        }
+
+        .about__path-date {
+          position: absolute;
+          bottom: -52px;
+          left: 0;
+        }
+
+        .about__path-price {
+          position: absolute;
+          top: -28px;
+          left: 82px;
+        }
+
+        .about__path-seats-left {
+          position: absolute;
+          top: -51px;
+          right: -100px;
+        }
+      }
+    }
+
+    .about__title {
+      margin-left: -6px;
+      font-size: 60px;
+      font-family: "Montserrat SemiBold", sans-serif;
+      letter-spacing: 0.01em;
+
+      span {
+        color: @colorWhite;
+      }
+    }
+
+    .about__text {
+      margin-top: 35px;
+      font-size: 35px;
+      letter-spacing: 0.01em;
+
+      span {
+        color: @colorWhite;
+      }
+    }
+
+    .about__buttons {
+      margin-top: 61px;
+      .flex(row, unset, unset, 79px);
+
+      .about__btn-reserve {
+        .flex(unset, unset, center, 36px);
+        color: @colorWhite;
+        background-color: @colorBlack;
+        padding: 22px 22px 21px 22px;
+
+        div {
+          background-position: -96px 0;
+          width: 9px;
+          height: 16px;
+        }
+      }
+
+      .about__watch-video {
+
+        .about__btn-play {
+          width: 59px;
+          height: 59px;
+
+          div {
+            position: relative;
+            left: 2px;
+            background-position: -105px 0;
+            width: 11px;
+            height: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.advantages {
+  background-color: @colorBlack;
+  padding: 124px 0 115px;
+  overflow: hidden;
+
+  .advantages__container {
+
+    .advantages__top {
+      .flex(row, space-between, unset, unset);
+      margin-bottom: 180px;
+
+      .advantages__top-title {
+        display: none;
+      }
+
+      .advantages__top-left {
+        background-color: @colorWhite;
+        width: 399px;
+        height: 448px;
+        position: relative;
+
+        img {
+          position: absolute;
+          top: 72px;
+          left: 43px;
+        }
+      }
+
+      .advantages__top-right {
+        max-width: 432px;
+        margin-top: -8px;
+
+        .advantages__top-title {
+          margin-bottom: 50px;
+          display: block;
+        }
+
+        .advantages__top-text {
+          font-size: 16px;
+          color: @colorWhite;
+          line-height: 1.438;
+        }
+      }
+    }
+
+    .advantages__middle {
+      .flex(column, unset, unset, 5px);
+      margin-bottom: 202px;
+
+      .advantages__middle-title {
+        align-self: center;
+        text-align: center;
+        max-width: 560px;
+        line-height: 1.286;
+      }
+
+      .advantages__middle-blocks {
+        position: relative;
+
+        .advantages__middle-blocks-block {
+          position: absolute;
+          top: 163px;
+          left: 0;
+          text-align: center;
+          max-width: 238px;
+          z-index: 1;
+
+          &::before {
+            .flex(unset, center, center, unset);
+            content: '1';
+            font-size: 30px;
+            background-color: @colorWhite;
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            position: absolute;
+            top: -110px;
+            left: 50% !important;
+            transform: translateX(-50%) !important;
+          }
+
+          &:nth-child(2) {
+            max-width: 229px;
+            //top: 365px;
+            top: 337px;
+            left: 305px;
+
+            &::before {
+              content: '2';
+              top: unset;
+              bottom: -110px;
+            }
+          }
+
+          &:nth-child(3) {
+            max-width: 235px;
+            top: 167px;
+            left: 601px;
+
+            &::before {
+              content: '3';
+            }
+          }
+
+          &:nth-child(4) {
+            max-width: 222px;
+            //top: 379px;
+            top: 348px;
+            left: unset;
+            right: 0;
+
+            &::before {
+              content: '4';
+              top: unset;
+              bottom: -110px;
+            }
+          }
+
+          .advantages__middle-blocks-block-title {
+            font-size: 18px;
+            font-family: "Montserrat SemiBold", sans-serif;
+            color: @colorWhite;
+            margin-bottom: 20px;
+          }
+
+          .advantages__middle-blocks-block-text {
+            font-size: 14px;
+            color: @colorWhite;
+            line-height: 1.5;
+          }
+        }
+
+        .advantages__middle-blocks-path {
+          position: relative;
+
+          svg {
+            position: relative;
+          }
+
+          .svg-wide {
+            left: 50%;
+            transform: translateX(calc(-50% + 71px));
+            //На макете SVG выходит за границы экрана справа на 142px. Для правильного центрирования делаем расчёт.
+          }
+
+          .svg-medium {
+            left: 50%;
+            transform: translateX(calc(-50% + -170px));
+            display: none;
+          }
+
+          .svg-narrow {
+            display: none;
+            left: 50%;
+            transform: translateX(calc(-50% + -85px));
+            margin-top: -31px;
+          }
+        }
+      }
+    }
+
+    .advantages__bottom {
+
+      .advantages__bottom-title {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+
+      .advantages__bottom-content {
+        .flex(row, space-between, unset, unset);
+
+        .advantages__bottom-left {
+          padding-top: 39px;
+
+          .advantages__iceland {
+            position: relative;
+            max-width: 487px;
+
+            .advantages__iceland-path {
+              position: absolute;
+              top: 154px;
+              left: 87px;
+
+              .svg-narrow {
+                display: none;
+              }
+            }
+
+            .advantages__iceland-path-point {
+              position: absolute;
+              .flex(unset, center, center, unset);
+              border-radius: 50%;
+              background-color: @colorBlack;
+              padding: 1px 0 0 1px;
+              width: 24px;
+              height: 24px;
+              cursor: pointer;
+              font-size: 14px;
+              color: @colorWhite;
+              top: 140px;
+              left: 75px;
+
+              &:nth-child(3) {
+                top: 222px;
+                left: 137px;
+              }
+
+              &:nth-child(4) {
+                top: 263px;
+                left: 90px;
+              }
+
+              &:nth-child(5) {
+                top: 315px;
+                left: 118px;
+              }
+
+              &:nth-child(6) {
+                top: 315px;
+                left: 192px;
+              }
+            }
+
+            .advantages__iceland-path-point_selected {
+              background-color: @colorBlue;
+              transform: scale(1.25);
+              font-size: 12px;
+              padding: 0;
+            }
+
+            .advantages__iceland-title {
+              position: absolute;
+              font-size: 30px;
+              font-family: "Acquest Script", sans-serif;
+              top: 244px;
+              left: 273px;
+            }
+
+            .img-narrow {
+              display: none;
+            }
+          }
+        }
+
+        .advantages__bottom-right {
+          max-width: 445px;
+          .flex(column, unset, unset, 25px);
+
+          .advantages__bottom-right-title {
+            font-size: 20px;
+            font-family: "Montserrat SemiBold", sans-serif;
+            color: @colorWhite;
+            transition: opacity ease 0.5s;
+          }
+
+          .advantages__bottom-right-text {
+            font-size: 16px;
+            color: @colorWhite;
+            line-height: 1.438;
+            transition: opacity ease 0.5s;
+          }
+
+          .advantages__bottom-right-image {
+            position: relative;
+            padding: 35px 0;
+            height: 255px;
+
+            img {
+              position: relative;
+              z-index: 1;
+            }
+
+            .advantages__big-white {
+              background-color: @colorWhite;
+              width: 336px;
+              height: 325px;
+              position: absolute;
+              top: 0;
+              right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.last-tour-video {
+  background: url("../images/iceland-mount.png") center no-repeat;
+  background-size: cover;
+  height: 700px;
+  max-width: 100%;
+
+  .last-tour-video__container {
+    height: 100%;
+    position: relative;
+    .flex(row, center, center, unset);
+
+    .last-tour-video__watch-video {
+      position: relative;
+      gap: 20px;
+      padding-left: 64px;
+
+      .last-tour-video__btn-play {
+        width: 80px;
+        height: 80px;
+
+        div {
+          position: relative;
+          left: 2px;
+          background-position: -18px 0;
+          width: 14px;
+          height: 17px;
+        }
+      }
+    }
+
+    .last-tour-video__youtube {
+      opacity: 0;
+      z-index: -1;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: opacity ease 1s;
+
+      iframe {
+        border: 1px solid @colorWhite;
+        width: 560px;
+        height: 315px;
+      }
+
+      .last-tour-video__cross {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 0.7;
+        position: absolute;
+        top: -25px;
+        right: -25px;
+        color: @colorWhite;
+        text-shadow: 2px 2px 0 @colorBlack, 2px -2px 0 @colorBlack, -2px 2px 0 @colorBlack, -2px -2px 0 @colorBlack, 2px 0px 0 @colorBlack, 0px 2px 0 @colorBlack, -2px 0px 0 @colorBlack, 0px -2px 0 @colorBlack;
+        cursor: pointer;
+
+        &:hover {
+          color: @colorBlue;
+        }
+      }
+    }
+  }
+}
+
+.tour-program {
+  background-color: @colorBlack;
+  padding: 125px 0 184px;
+
+  .tour-program__container {
+    .flex(column, unset, unset, 60px);
+
+    .tour-program__title {
+      align-self: center;
+    }
+
+    .tour-program__content {
+      position: relative;
+      padding: 0 0 0 75px;
+
+      .slick-carousel-tour {
+        .slick-carousel__item {
+          .slick-carousel-tour__item-image {
+            margin-top: 34px;
+          }
+
+          .slick-carousel-tour__item-text {
+            max-width: 467px;
+            .flex(column, unset, unset, 25px);
+            color: @colorWhite;
+
+            .tour-program__day-of-tour {
+              font-size: 25px;
+              font-family: "Montserrat SemiBold", sans-serif;
+              margin-bottom: 30px;
+
+              span {
+                font-size: 15px;
+                color: rgb(164, 164, 164);
+              }
+            }
+
+            .tour-program__slide-title {
+              font-size: 20px;
+              font-family: "Montserrat SemiBold", sans-serif;
+            }
+
+            .tour-program__slide-text {
+              font-size: 16px;
+              line-height: 1.438;
+            }
+          }
+        }
+      }
+
+      .tour-program__big-white {
+        background-color: @colorWhite;
+        width: 399px;
+        height: 448px;
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        left: 0;
+      }
+
+      .tour-program__download {
+        position: absolute;
+        z-index: 2;
+        top: 430px;
+        left: 645px;
+        color: @colorWhite;
+        font-size: 16px;
+        text-decoration: none;
+        .flex(row, unset, center, 15px);
+
+        .tour-program__download-icon {
+          background-image: url('../images/sprite-button.png');
+          background-position: 0 0;
+          width: 18px;
+          height: 18px;
+        }
+
+        span {
+          box-shadow: inset 0px -1px 0px 0px rgba(@colorBlack, 0.7), inset 0px -2px 0px 0px rgba(@colorWhite, 0.8);
+        }
+      }
+    }
+  }
+}
+
+.slick-carousel {
+  z-index: 1;
+
+  .slick-carousel__item {
+    max-width: 100%;
+    .flex(row, space-between, unset, unset);
+  }
+}
+
+.carousel-button {
+  width: 46px;
+  height: 46px;
+  .flex(unset, center, center, unset);
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+
+  .carousel-button-background-block {
+    background-image: url('../images/sprite-button.png');
+  }
+
+  &.disabled {
+    border-color: @colorGray;
+  }
+}
+
+.carousel-button-tour_left, .carousel-button-tour_right {
+  top: 328px;
+  left: 645px;
+  border: 1px solid @colorWhite;
+
+  .carousel-button-background-block {
+    background-position: -80px 0;
+    width: 16px;
+    height: 10px;
+  }
+}
+
+.carousel-button-tour_right {
+  left: 712px;
+
+  .carousel-button-background-block {
+    background-position: -32px 0;
+    height: 11px;
+  }
+}
+
+.feedbacks {
+  background-color: @colorBlack;
+  padding-bottom: 130px;
+  padding-top: 30px;
+
+  .feedbacks__container {
+    .flex(column, unset, unset, 60px);
+
+    .feedbacks__title {
+      text-align: center;
+      line-height: 0.75;
+    }
+
+    .feedbacks__content {
+      background-color: @colorWhite;
+      padding: 55px;
+      position: relative;
+
+      .slick-carousel-feedbacks {
+        .slick-carousel__item {
+          .slick-carousel-feedbacks__item-text {
+            max-width: 448px;
+            .flex(column, unset, unset, 24px);
+
+            .feedbacks__name {
+              font-size: 20px;
+              font-family: "Montserrat SemiBold", sans-serif;
+            }
+
+            .feedbacks__score {
+              font-size: 16px;
+              font-family: "Montserrat SemiBold", sans-serif;
+              margin-bottom: 12px;
+            }
+
+            .feedbacks__slide-text {
+              font-size: 16px;
+              line-height: 1.438;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.carousel-button-feedbacks_left, .carousel-button-feedbacks_right {
+  border: 1px solid @colorBlack;
+  bottom: 55px;
+  left: 55px;
+
+  .carousel-button-background-block {
+    background-position: -48px 0;
+    width: 16px;
+    height: 11px;
+  }
+
+  &.disabled {
+    .carousel-button-background-block {
+      background-position: -148px 0;
+      height: 10px;
+    }
+  }
+}
+
+.carousel-button-feedbacks_right {
+  left: 107px;
+
+  .carousel-button-background-block {
+    background-position: -64px 0;
+  }
+
+  &.disabled {
+    .carousel-button-background-block {
+      background-position: -132px 0;
+      height: 10px;
+    }
+  }
+}
+
+.gallery {
+  background-color: @colorBlack;
+  padding-bottom: 104px;
+  padding-top: 50px;
+
+  .gallery__container {
+    .flex(column, unset, unset, 60px);
+
+    .gallery__title {
+      text-align: center;
+    }
+
+    .gallery__content {
+      position: relative;
+
+      .slick-carousel-gallery {
+        .slick-carousel__item {
+          .flex(row, unset, unset, 42px);
+
+          .slick-carousel-gallery__item-left-block {
+            padding: 51px 0 0 0;
+
+            img {
+              width: 328px;
+              height: 290px;
+              cursor: zoom-in;
+            }
+          }
+
+          .slick-carousel-gallery__item-central-block {
+            .flex(column, unset, unset, 38px);
+
+            .slick-carousel-gallery__item-central-block-top {
+              .flex(row, unset, unset, 42px);
+
+              a:first-child {
+                img {
+                  align-self: flex-start;
+                  width: 147px;
+                  height: 126px;
+                  cursor: zoom-in;
+                }
+              }
+
+              a:last-child {
+                img {
+                  margin-top: 22px;
+                  align-self: flex-end;
+                  width: 208px;
+                  height: 145px;
+                  cursor: zoom-in;
+                }
+              }
+            }
+
+            .slick-carousel-gallery__item-central-block-bottom {
+              padding-left: 40px;
+
+              img {
+                width: 298px;
+                height: 167px;
+                cursor: zoom-in;
+              }
+            }
+          }
+
+          .slick-carousel-gallery__item-right-block {
+            .flex(row, flex-end, unset, unset);
+            flex-grow: 1;
+
+            img {
+              width: 285px;
+              height: 380px;
+              cursor: zoom-in;
+            }
+          }
+        }
+      }
+
+      .slick-carousel-gallery-mini {
+        display: none;
+
+        .slick-carousel__item {
+          a {
+            .flex(unset, center, center, unset);
+
+            img {
+              object-fit: cover;
+              max-width: 90vw;
+              max-height: 60vh;
+            }
+          }
+        }
+      }
+
+      .gallery-button {
+        position: absolute;
+        bottom: -12px;
+        left: calc(50% - 58px);
+        transform: translateX(-50%);
+        z-index: 1;
+        cursor: pointer;
+
+        .gallery-button__background-block {
+          background-image: url('../images/sprite-button.png');
+          background-position: -116px 0;
+          width: 8px;
+          height: 15px;
+        }
+
+        &.gallery-button__right {
+          left: calc(50% + 58px);
+
+          .gallery-button__background-block {
+            background-position: -124px 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.slick-dots {
+  padding-top: 27px;
+  bottom: -40px;
+  .flex(row, center, unset, 10px);
+
+  li {
+    .flex(unset, center, center, unset);
+    margin: 0;
+    width: unset;
+    height: unset;
+
+    button {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      border: 1px solid @colorWhite;
+      background-color: transparent;
+
+      &::before {
+        display: none;
+        width: 12px;
+        height: 12px;
+      }
+    }
+  }
+
+  li.slick-active {
+    button {
+      &::before {
+        display: block;
+        color: @colorWhite;
+        opacity: 1;
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+  }
+}
+
+.reservation {
+  background-image: url("../images/volcano.png");
+  padding: 88px 0 125px;
+
+  .reservation__container {
+    .flex(column, unset, center, unset);
+
+    .reservation__tile {
+      margin-bottom: 60px;
+      line-height: 0.8;
+    }
+
+    .reservation__form {
+      width: 100%;
+      max-width: 336px;
+      position: relative;
+
+      .reservation__form-app {
+
+        .reservation__form-people_quantity-title {
+          font-size: 16px;
+          font-family: "Muller Regular", sans-serif;
+          color: @colorWhite;
+          margin-bottom: 20px;
+        }
+
+        .reservation__quantity {
+          .flex(row, space-between, unset, unset);
+
+          .reservation__btn {
+            .flex(unset, center, center, unset);
+            border: 1px solid @colorWhite;
+            width: 35px;
+            height: 35px;
+            font-size: 20px;
+            color: @colorWhite;
+            background-color: transparent;
+            cursor: pointer;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+
+            &.warning {
+              border-color: red;
+            }
+          }
+
+          .reservation__btn.selected {
+            color: @colorBlack;
+            background-color: @colorWhite;
+          }
+        }
+
+        .reservation__input {
+          width: 100%;
+          font-size: 16px;
+          font-family: "Montserrat Regular", sans-serif;
+          color: @colorWhite;
+          background-color: transparent;
+          padding: 18px 15px 20px;
+          outline: none;
+          border: 1px solid @colorWhite;
+          height: 50px;
+          line-height: 0.8;
+          box-sizing: border-box;
+
+          &::placeholder {
+            font-size: 16px;
+            font-family: "Montserrat Regular", sans-serif;
+            color: @colorWhite;
+          }
+
+          &.warning {
+            border-color: red;
+          }
+        }
+
+        .reservation__warning-text {
+          font-size: 12px;
+          font-family: "Montserrat Medium", sans-serif;
+          color: red;
+          padding-left: 5px;
+          margin-bottom: 5px;
+
+          &:nth-child(3) {
+            margin-bottom: 25px;
+          }
+
+          &.invisible {
+            visibility: hidden;
+          }
+        }
+
+        .reservation__btn-submit {
+          box-sizing: border-box;
+          line-height: 0.8;
+          display: block;
+          height: 50px;
+          text-decoration: none;
+          font-size: 16px;
+          font-family: "Montserrat Medium", sans-serif;
+          color: @colorBlack;
+          text-align: center;
+          background-color: @colorWhite;
+          padding: 18px 0 19px;
+        }
+      }
+
+      .reservation__modal-window {
+        opacity: 0;
+        background-color: rgba(@colorBlack, 0.6);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        .flex (unset, center, center, unset);
+        border: 1px solid @colorWhite;
+
+        .reservation__modal-window-btn {
+          font-weight: bold;
+          font-size: 36px;
+          position: absolute;
+          top: 0;
+          right: 10px;
+          cursor: pointer;
+          color: @colorBlue;
+        }
+      }
+    }
+  }
+}
+
+.sprite-social {
+  background-image: url('../images/sprite-social.png');
+}
+
+.footer {
+  background-color: @colorWhite;
+
+  .footer__container {
+    .flex(row, space-between, unset, unset);
+    padding: 28px 0 29px;
+
+    .footer__left-part {
+      .flex(unset, center, center, unset);
+    }
+
+    .footer__central-part {
+      .flex(row, center, unset, 26px);
+
+      .footer__central-part-social {
+        background-image: url('../images/sprite-social.png');
+        background-position: 0 0;
+        width: 45px;
+        height: 45px;
+        cursor: pointer;
+
+        &:nth-child(2) {
+          background-image: url('../images/sprite-social.png');
+          background-position: -45px 0;
+          width: 45px;
+          height: 45px;
+        }
+
+        &:nth-child(3) {
+          background-image: url('../images/sprite-social.png');
+          background-position: -90px 0;
+          width: 45px;
+          height: 45px;
+        }
+
+        &:hover {
+          opacity: 0.9;
+        }
+      }
+    }
+
+    .footer__right-part {
+      .flex(unset, center, center, unset);
+
+      .footer__right-part_text {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.d-none {
+  display: none !important;
+}
+
+@import 'adaptive';
