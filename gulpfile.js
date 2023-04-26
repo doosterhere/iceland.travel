@@ -21,7 +21,12 @@ function copyPlugins() {
     return gulp.src(['node_modules/jquery/dist/jquery.min.js',
         'node_modules/wowjs/dist/wow.min.js',
         'node_modules/slick-carousel/slick/slick.min.js',
-        'node_modules/magnific-popup/dist/jquery.magnific-popup.min.js'])
+        'node_modules/magnific-popup/dist/jquery.magnific-popup.min.js',
+        'node_modules/animate.css/animate.min.css',
+        'node_modules/slick-carousel/slick/slick.css',
+        'node_modules/slick-carousel/slick/slick-theme.css',
+        'node_modules/magnific-popup/dist/magnific-popup.css',
+        'node_modules/hover.css/css/hover-min.css'])
         .pipe(gulp.dest('./output'));
 }
 
